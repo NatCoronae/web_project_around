@@ -22,6 +22,8 @@ Este proyecto es una galería de fotos de distintos lugares. Puedes ver las imá
 
 ## Ver el proyecto
 
+https://natcoronae.github.io/web_project_around/
+
 ## Sobre mí
 
 Hecho por Natalia Corona.
