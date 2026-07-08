@@ -1,0 +1,23 @@
+.profile__edit-button {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.profile__edit-button::before {
+  content: "\270E";
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+}
+
+.profile__edit-button:hover {
+  opacity: 1;
+}

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Around The U.S.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <img src="./images/logo.svg" class="header__logo" alt="Around the US" />
+      </header>
+
+      <main class="content">
+        <section class="profile">
+          <div class="profile__container">
+            <img
+              src="./images/Jacques.png"
+              alt="Jacques Cousteau"
+              class="profile__avatar"
+            />
+
+            <div class="profile__info">
+              <div class="profile__title-wrapper">
+                <h1 class="profile__name">Jacques Cousteau</h1>
+                <button type="button" class="profile__edit-button"></button>
+              </div>
+              <p class="profile__description">Explorador</p>
+            </div>
+          </div>
+          <button type="button" class="profile__add-button"></button>
+        </section>
+
+        <section class="cards">
+          <div class="card">
+            <img
+              src="./images/Yosemite.png"
+              alt="Yosemite"
+              class="card__image"
+            />
+            <div class="card__info">
+              <p class="card__text">Valle de Yosemite</p>
+              <button type="button" class="card__button-like"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/Louise.png" alt="Louise" class="card__image" />
+            <div class="card__info">
+              <p class="card__text">Lago Louise</p>
+              <button type="button" class="card__button-like"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/Calvas.png" alt="Calvas" class="card__image" />
+            <div class="card__info">
+              <p class="card__text">Montañas Calvas</p>
+              <button type="button" class="card__button-like"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/Latemar.png" alt="Latemar" class="card__image" />
+            <div class="card__info">
+              <p class="card__text">Latemar</p>
+              <button type="button" class="card__button-like"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img src="./images/Vanois.png" alt="Vanois" class="card__image" />
+            <div class="card__info">
+              <p class="card__text">Vanois National Park</p>
+              <button type="button" class="card__button-like"></button>
+            </div>
+          </div>
+
+          <div class="card">
+            <img
+              src="./images/Lago de Braises.png"
+              alt="Braies"
+              class="card__image"
+            />
+            <div class="card__info">
+              <p class="card__text">Lago di Braies</p>
+              <button type="button" class="card__button-like"></button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2026 Around The U.S.</p>
+      </footer>
+    </div>
+
+    <section class="popup">
+      <div class="popup__container">
+        <button type="button" class="popup__close" aria-label="Cerrar"></button>
+
+        <h2 class="popup__title">Editar perfil</h2>
+        <form class="popup__form" name="edit-profile" novalidate>
+          <div class="popup__field">
+            <input
+              type="text"
+              name="name"
+              id="name-input"
+              class="popup__input"
+              placeholder="Nombre"
+              minlength="2"
+              maxlength="40"
+              required
+            />
+            <span class="popup__input-error name-input-error"></span>
+          </div>
+
+          <div class="popup__field">
+            <input
+              type="text"
+              name="about"
+              id="about-input"
+              class="popup__input"
+              placeholder="Acerca de mi"
+              minlength="2"
+              maxlength="200"
+              required
+            />
+            <span class="popup__input-error about-input-error"></span>
+          </div>
+
+          <button type="submit" class="popup__button">Guardar</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

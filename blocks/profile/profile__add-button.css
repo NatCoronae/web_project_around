@@ -1,0 +1,42 @@
+.profile__add-button {
+  flex-shrink: 0;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  position: relative;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.profile__add-button:hover {
+  opacity: 1;
+}
+
+.profile__add-button::before,
+.profile__add-button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+}
+
+.profile__add-button::before {
+  width: 20px;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+
+.profile__add-button::after {
+  width: 2px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 480px) {
+  .profile__add-button {
+    width: 100%;
+    height: 50px;
+  }
+}
